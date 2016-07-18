@@ -1,0 +1,238 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <title>Red Lobster</title>
+    <!-- Styles -->
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/css/bootstrap.min.css" integrity="sha384-1q8mTJOASx8j1Au+a5WDVnPi2lkFfwwEAa8hDDdjZlpLegxhjVME1fgjWPGmkzs7" crossorigin="anonymous" />
+    <link rel="stylesheet" href="style.css" />
+</head>
+
+<body>
+    <div class="container">
+        <div class="row">
+            <div class="col-md-8 content">
+                <h1>Hours of Operation</h1>
+                <div class="interface">
+                    <div class="day mon">
+                        <p>
+                            <input type="checkbox" name="mon" id="mon" />
+                            <label for="mon">Monday</label>
+                        </p>
+                    </div>
+                    <!-- day -->
+                    <div class="day tue">
+                        <p>
+                            <input type="checkbox" name="tue" id="tue" />
+                            <label for="tue">Tuesday</label>
+                        </p>
+                    </div>
+                    <!-- day -->
+                    <div class="day wed">
+                        <p>
+                            <input type="checkbox" name="wed" id="wed" />
+                            <label for="wed">Wednesday</label>
+                        </p>
+                    </div>
+                    <!-- day -->
+                    <div class="day thur">
+                        <p>
+                            <input type="checkbox" name="thur" id="thur" />
+                            <label for="thur">Thursday</label>
+                        </p>
+                    </div>
+                    <!-- day -->
+                    <div class="day fri">
+                        <p>
+                            <input type="checkbox" name="fri" id="fri" />
+                            <label for="fri">Friday</label>
+                        </p>
+                    </div>
+                    <!-- day -->
+                    <div class="day sat">
+                        <p>
+                            <input type="checkbox" name="sat" id="sat" />
+                            <label for="sat">Saturday</label>
+                        </p>
+                    </div>
+                    <!-- day -->
+                    <div class="day sun">
+                        <p>
+                            <input type="checkbox" name="sun" id="sun" />
+                            <label for="sun">Sunday</label>
+                        </p>
+                    </div>
+                    <!-- day -->
+                    <div class="additional_days">
+                        <p><u>Select US Public holidays you are operational on?</u></p>
+                        <br>
+                        <br>
+                    </div>
+                    <!-- day -->
+                    <!-- .interface -->
+                </div>
+                <!-- .content -->
+            </div>
+            <div class="col-md-4 preview_window">
+                <h5><b>Preview (Open Hours)</b></h5>
+                <div class="preview">
+                    <span class="mon"></span>
+                    <span class="tue"></span>
+                    <span class="wed"></span>
+                    <span class="thur"></span>
+                    <span class="fri"></span>
+                    <span class="sat"></span>
+                    <span class="sun"></span>
+                    <span class="additional_open"></span>
+                </div>
+            </div>
+            <!-- .row -->
+        </div>
+        <!-- .container -->
+        <script src="https://code.jquery.com/jquery-3.1.0.min.js" type="text/javascript"></script>
+        <script src="js/main.js" type="text/javascript"></script>
+        <div class="ui-options" style="display: none">
+            <div class="hours">
+                <form class="form-inline form-primary">
+                    <div>We're open from</div>
+                    <br />
+                    <div class="form-group">
+                        <label>From</label>
+                        <select class="form-control" name="_from">
+                            <option value="1">1 AM</option>
+                            <option value="2">2 AM</option>
+                            <option value="3">3 AM</option>
+                            <option value="4">4 AM</option>
+                            <option value="5">5 AM</option>
+                            <option value="6">6 AM</option>
+                            <option value="7">7 AM</option>
+                            <option value="8">8 AM</option>
+                            <option value="9">9 AM</option>
+                            <option value="10">10 AM</option>
+                            <option value="11">11 AM</option>
+                            <option value="12">12 Noon</option>
+                            <option value="13">1 PM</option>
+                            <option value="14">2 PM</option>
+                            <option value="15">3 PM</option>
+                            <option value="16">4 PM</option>
+                            <option value="17">5 PM</option>
+                            <option value="18">6 PM</option>
+                            <option value="19">7 PM</option>
+                            <option value="20">8 PM</option>
+                            <option value="21">9 PM</option>
+                            <option value="22">10 PM</option>
+                            <option value="23">11 PM</option>
+                            <option value="00">12 Midnight</option>
+                        </select>
+                    </div>
+                    <div class="form-group">-</div>
+                    <div class="form-group">
+                        <label>Till</label>
+                        <select class="form-control" name="_to">
+                            <option value="1">1 AM</option>
+                            <option value="2" selected>2 AM</option>
+                            <option value="3">3 AM</option>
+                            <option value="4">4 AM</option>
+                            <option value="5">5 AM</option>
+                            <option value="6">6 AM</option>
+                            <option value="7">7 AM</option>
+                            <option value="8">8 AM</option>
+                            <option value="9">9 AM</option>
+                            <option value="10">10 AM</option>
+                            <option value="11">11 AM</option>
+                            <option value="12">12 Noon</option>
+                            <option value="13">1 PM</option>
+                            <option value="14">2 PM</option>
+                            <option value="15">3 PM</option>
+                            <option value="16">4 PM</option>
+                            <option value="17">5 PM</option>
+                            <option value="18">6 PM</option>
+                            <option value="19">7 PM</option>
+                            <option value="20">8 PM</option>
+                            <option value="21">9 PM</option>
+                            <option value="22">10 PM</option>
+                            <option value="23">11 PM</option>
+                            <option value="00">12 Midnight</option>
+                        </select>
+                    </div>
+                </form>
+                <form class="form-inline form-split">
+                    <div>And Then from</div>
+                    <br>
+                    <div class="form-group">
+                        <label>From</label>
+                        <select class="form-control" name="_from_split">
+                            <option value="1">1 AM</option>
+                            <option value="2">2 AM</option>
+                            <option value="3">3 AM</option>
+                            <option value="4">4 AM</option>
+                            <option value="5">5 AM</option>
+                            <option value="6">6 AM</option>
+                            <option value="7">7 AM</option>
+                            <option value="8">8 AM</option>
+                            <option value="9">9 AM</option>
+                            <option value="10" selected>10 AM</option>
+                            <option value="11">11 AM</option>
+                            <option value="12">12 Noon</option>
+                            <option value="13">1 PM</option>
+                            <option value="14">2 PM</option>
+                            <option value="15">3 PM</option>
+                            <option value="16">4 PM</option>
+                            <option value="17">5 PM</option>
+                            <option value="18">6 PM</option>
+                            <option value="19">7 PM</option>
+                            <option value="20">8 PM</option>
+                            <option value="21">9 PM</option>
+                            <option value="22">10 PM</option>
+                            <option value="23">11 PM</option>
+                            <option value="00">12 Midnight</option>
+                        </select>
+                    </div>
+                    <div class="form-group">-</div>
+                    <div class="form-group">
+                        <label>Till</label>
+                        <select class="form-control" name="_to_split">
+                            <option value="1">1 AM</option>
+                            <option value="2">2 AM</option>
+                            <option value="3">3 AM</option>
+                            <option value="4">4 AM</option>
+                            <option value="5">5 AM</option>
+                            <option value="6">6 AM</option>
+                            <option value="7">7 AM</option>
+                            <option value="8">8 AM</option>
+                            <option value="9">9 AM</option>
+                            <option value="10">10 AM</option>
+                            <option value="11">11 AM</option>
+                            <option value="12">12 Noon</option>
+                            <option value="13" selected>1 PM</option>
+                            <option value="14">2 PM</option>
+                            <option value="15">3 PM</option>
+                            <option value="16">4 PM</option>
+                            <option value="17">5 PM</option>
+                            <option value="18">6 PM</option>
+                            <option value="19">7 PM</option>
+                            <option value="20">8 PM</option>
+                            <option value="21">9 PM</option>
+                            <option value="22">10 PM</option>
+                            <option value="23">11 PM</option>
+                            <option value="00">12 Midnight</option>
+                        </select>
+                    </div>
+                    <br>
+                </form>
+                <br>
+                <div class="split_time">
+                    <input type="checkbox" name="add-split-time" />
+                    <label>Select to split time of your operation</label>
+                </div>
+                <br>
+                <div class="form-group">
+                    <textarea cols="30" rows="5" class="form-control additonal-info" placeholder="Mention any additional info for this day here"></textarea>
+                </div>
+                <a class="btn btn-primary save" href="#">Save</a>
+            </div>
+            <!-- hours -->
+        </div>
+</body>
+
+</html>

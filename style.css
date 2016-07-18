@@ -1,0 +1,83 @@
+.content {
+    padding: 30px;
+}
+
+.preview_window {
+    padding: 10px;
+    background-color: #ccc;
+    margin-top: 50px;
+}
+
+.content h1 {
+    margin-bottom: 30px;
+    padding-bottom: 30px;
+    border-bottom: 1px solid #eee;
+}
+
+.content label {
+    text-transform: uppercase;
+}
+
+.content .day {
+    position: relative;
+    width: 100%;
+    display: inline-block;
+    margin-bottom: 10px;
+}
+
+.content .day .hours {
+    margin-top: 10px;
+    display: none;
+    float: left;
+    width: 100%;
+    background-color: #eee;
+    padding: 20px;
+}
+
+.content .day .hours .form-split {
+    border-top: 1px solid #ccc;
+    padding-top: 20px;
+    margin-top: 20px;
+    display: none;
+}
+
+.content .day .hours p {
+    margin-left: 3px;
+    display: inline;
+}
+
+.content .day .hours .split_time label {
+    text-transform: capitalize;
+    font-weight: normal;
+    color: blue;
+    text-decoration: underline;
+}
+
+.content .day .hours .split_time input {
+    margin: 0;
+    top: 2px;
+    position: relative;
+}
+
+.content .day .hours p label {
+    margin-right: 10px;
+}
+
+.preview span {
+    display: block;
+    margin: 5px 0;
+}
+
+.additional_days p {
+    display: inline-block;
+    margin-right: 20px;
+}
+.additional_days p input {
+    margin: 0px 5px 0 0;
+}
+.additional_days p label {
+    text-transform: inherit;
+    font-weight: normal;
+    position: relative;
+    top: -1px;
+}
